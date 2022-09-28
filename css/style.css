@@ -23,7 +23,7 @@ body {
     left: 20px;
     width: 70px;
     height: 50px;
-    background-color: #1b1b1b;
+    background-color: #000000;
     background-image: url("../image/sami.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@ body {
     right: 82px;
     width: 70px;
     height: 50px;
-    background-color: #1b1b1b;
+    background-color: #000000;
     background-image: url("../image/murphyTete.png");
     background-size: cover;
     background-repeat: no-repeat;
