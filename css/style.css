@@ -1,0 +1,115 @@
+body {
+    background-color: #1b1b1b;
+    margin: 20px;
+}
+
+.img {
+    width: 250px;
+    height: 190px;
+    margin: auto;
+    position: relative;
+}
+
+.car {
+    width: 250px;
+    height: 150px;
+    background-color: #663399;
+    clip-path: polygon(
+    
+    23% 0, 
+    53% 1%, 
+    71% 41%, 
+    100% 52%, 
+    100% 100%, 
+    0 100%, 
+    0 28%);
+}
+
+.w1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 70px;
+    height: 50px;
+    background-color: #1b1b1b;
+    clip-path: polygon(
+        
+    55% 0, 
+    100% 0, 
+    100% 100%, 
+    0 100%, 
+    0 60%);
+}
+
+.w2 {
+    position: absolute;
+    top: 10px;
+    right: 82px;
+    width: 70px;
+    height: 50px;
+    background-color: #1b1b1b;
+    clip-path: polygon(
+        
+    0% 0, 
+    45% 0, 
+    100% 100%, 
+    0 100%);
+   
+
+}
+
+.weel1 {
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1b1b1b;
+}
+
+.weel2 {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1b1b1b;
+}
+
+.r {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: go 6s infinite;
+}
+
+.s {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1b1b1b;
+}
+
+.m {
+    width: 50px;
+    height: 50px;
+    background-color: #e6e6e6;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+@keyframes go {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
