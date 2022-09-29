@@ -30,13 +30,17 @@ body {
     left: 20px;
     width: 70px;
     height: 50px;
-    background-color: #93bfea;
+    background-color: #000000;
+    background-image: url("../image/sami.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px;
     clip-path: polygon(
-        
-    55% 0, 
-    100% 0, 
-    100% 100%, 
-    0 100%, 
+
+    55% 0,
+    100% 0,
+    100% 100%,
+    0 100%,
     0 60%);
 }
 
@@ -46,14 +50,18 @@ body {
     right: 82px;
     width: 70px;
     height: 50px;
-    background-color: #93bfea;
+    background-color: #000000;
+    background-image: url("../image/murphyTete.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10px 1px;
     clip-path: polygon(
-        
-    0% 0, 
-    45% 0, 
-    100% 100%, 
+
+    0% 0,
+    45% 0,
+    100% 100%,
     0 100%);
-   
+
 
 }
 
@@ -64,7 +72,8 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #1d18c2;
+    background-color: #1b1b1b;
+
 }
 
 .roueDroite {
