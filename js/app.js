@@ -67,6 +67,6 @@
     //         document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
     //         break;
     // }
-}
+// }
 
 
