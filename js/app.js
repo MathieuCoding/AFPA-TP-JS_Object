@@ -1,9 +1,11 @@
 /*lisez pas cette fonction :o*/
 
 function Creatator() {
+    // la variable tab contient toute les clés de notre objet voiture
     let tab = Object.keys(voiture);
     for (i = 0; i < tab.length; i++)
     {
+        // la variable subTab contient les clés des éventuels sous objet de voiture
         let subTab = Object.keys(voiture[tab[i]]);
         switch (tab[i]) {
             case "groupeFenetres":
@@ -18,7 +20,7 @@ function Creatator() {
                     document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeRoues[subTab[j]];
                 }
                 break;
-            case "jantes":
+            case "groupeJantes":
                 for (var j = 0; j < subTab.length; j++) {
                     console.log(voiture.jantes[j], document.getElementsByClassName(subTab[j])[0].classList[1])
                     document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.jantes[subTab[j]];
@@ -39,20 +41,19 @@ function Creatator() {
  * - fenetres
  * - roues
  * - jantes
-
- * Couleurs :
- * - rouge => "red"
- * - bleu => "blue"
- * - rose => "pink"
- * - blanc => "whiteColor"
  * */
 
-let voiture = {
-    carosserie: "white",
-    fenetres: "blue",
-    roues: "red",
-    jantes: "red",
-};
+///// créer votre objet
+let voiture =
+{
+    carosserie: ""
+}
+
+
+////// Créez des propriétés supplémentaire pour votre objet
+voiture.fenetres = "pink";
+voiture.roues = "red";
+voiture.jantes = "blue";
 
 //delete voiture.fenetres;
 //delete voiture.roues;
@@ -68,46 +69,27 @@ let voiture = {
 //    rDroite : "purple"
 //}
 
-//voiture.jantes = {
+//voiture.groupeJantes = {
 //    jGauche: "red",
 //    jDroite: "pink"
 //}
 
+////// Creatator() applique les modification de votre objet voiture
+Creatator();
 
-//voiture.creatator =
+/////// Créez votre fonction dans une propriété
+//voiture.fonctionSimple =
 //{
-//    CreerVoiture()
+//    JeSuisUneFonction()
 //    {
-//        let tab = Object.keys(voiture);
-//        for (i = 0; i < tab.length; i++)
+//        let i = 5
+//        while (i > 0)
 //        {
-//        let subTab = Object.keys(voiture[tab[i]]);
-//        switch (tab[i]) {
-//            case "fenetres":
-//                for (var j = 0; j < subTab.length; j++) {
-//                    console.log(voiture.fenetres[j], document.getElementsByClassName(subTab[j])[0].classList[1])
-//                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.fenetres[subTab[j]];
-//                }
-//                break;
-//            case "roues":
-//                for (var j = 0; j < subTab.length; j++) {
-//                    console.log(voiture.roues[j], document.getElementsByClassName(subTab[j])[0].classList[1])
-//                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.roues[subTab[j]];
-//                }
-//                break;
-//            case "jantes":
-//                for (var j = 0; j < subTab.length; j++) {
-//                    console.log(voiture.jantes[j], document.getElementsByClassName(subTab[j])[0].classList[1])
-//                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.jantes[subTab[j]];
-//                }
-//            case "creatator":
-//                break;
-//            default:
-//                document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
-//                break;
+//            console.log("Je suis une fonction")
+//            i--;
 //        }
-//    }
 //    }
 //}
 
-Creatator();
+
+//voiture.fonctionSimple();
