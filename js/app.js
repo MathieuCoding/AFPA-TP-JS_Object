@@ -35,44 +35,43 @@ function Creatator() {
 
 //Créez un objet, avec les propriétés ayant pour clé "carosserie", "année" et "contrôle technique", les valeurs peuvent être des chaînes de caractères, des nombres ou des booléens.
 
-let voiture = new Object();
-voiture.carosserie = "green";
-voiture["année"] = 2000;
-voiture["contrôle technique"] = true;
+// let voiture = new Object();
+// voiture.carosserie = "green";
+// voiture["année"] = 2000;
+// voiture["contrôle technique"] = true;
 
 // Modifiez la valeur de la propriété "carosserie"
 
-voiture.carosserie = "red";
+// voiture.carosserie = "red";
 
 // Supprimez les propriétés "année" et "contrôle technique" de l'objet "voiture"
 
-delete voiture.année;
-delete voiture["contrôle technique"];
+// delete voiture.année;
+// delete voiture["contrôle technique"];
 
 /* Ajoutez à l'objet "voiture" les objets suivants, et donnez leurs comme valeur une couleur :
-"groupeFenetres": fGauche, fDroite; 
-"groupeRoues": rGauche, rDroite; 
-"jantes": jGauche, jDroite */
+groupeFenetres: fGauche, fDroite; 
+groupeRoues: rGauche, rDroite; 
+jantes: jGauche, jDroite */
 
-voiture.groupeFenetres = {
-    fGauche: "black",
-}
+// voiture.groupeFenetres = {
+//     fGauche: "black",
+// }
+// voiture.groupeFenetres.fDroite = "pink";
 
-voiture.groupeFenetres.fDroite = "pink";
+// voiture.groupeRoues = {
+//     rGauche: "red",
+//     rDroite: "purple"
+// }
 
-voiture.groupeRoues = {
-   rGauche: "red",
-   rDroite : "purple"
-}
-
-voiture.jantes = {
-   jGauche: "red",
-   jDroite: "pink"
-}
+// voiture.jantes = {
+//     jGauche: "red",
+//     jDroite: "pink"
+// }
 
 // Enumérez dans la console de votre navigateur la liste des clés des prioriétés de votre voiture
 
-console.log(Object.keys(voiture));
+// console.log(Object.keys(voiture));
 
 
 
