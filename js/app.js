@@ -1,72 +1,113 @@
-/*_________________*/
+/*lisez pas cette fonction :o*/
+
+function Creatator() {
+    let tab = Object.keys(voiture);
+    for (i = 0; i < tab.length; i++)
+    {
+        let subTab = Object.keys(voiture[tab[i]]);
+        switch (tab[i]) {
+            case "groupeFenetres":
+                for (var j = 0; j < subTab.length; j++) {
+                    console.log(voiture.groupeFenetres[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeFenetres[subTab[j]];
+                }
+                break;
+            case "groupeRoues":
+                for (var j = 0; j < subTab.length; j++) {
+                    console.log(voiture.groupeRoues[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeRoues[subTab[j]];
+                }
+                break;
+            case "jantes":
+                for (var j = 0; j < subTab.length; j++) {
+                    console.log(voiture.jantes[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.jantes[subTab[j]];
+                }
+            case "creatator":
+                break;
+            default :
+                document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
+                break;
+        }
+    }
+}
 
 ////// Customisation possibles
+
 /* LES NOMS DES �L�MENT DE LA VOITURE � MURPHY
  * - carosserie
  * - fenetres
  * - roues
  * - jantes
- 
- * Couleurs : 
+
+ * Couleurs :
  * - rouge => "red"
  * - bleu => "blue"
- * - rose => "pink" 
+ * - rose => "pink"
+ * - blanc => "whiteColor"
  * */
 
+let voiture = {
+    carosserie: "white",
+    fenetres: "blue",
+    roues: "red",
+    jantes: "red",
+};
 
-//let voiture = new Object();
-//voiture.carosserie = " a";
-//voiture.fenetres = " a";
-//voiture.roues= "a ";
-//voiture.jantes = " a";
+//delete voiture.fenetres;
+//delete voiture.roues;
+//delete voiture.jantes;
 
-// let voiture = {
-//     carosserie: "pink",
-//     fenetres: "blue",
-//     roues: "red",
-//     jantes: "purple"
-// };
+//voiture.groupeFenetres = {
+//    fGauche : "red",
+//    fDroite : "blue"
+//}
 
-// delete voiture.fenetres;
-// delete voiture.roues;
+//voiture.groupeRoues = {
+//    rGauche: "red",
+//    rDroite : "purple"
+//}
 
-// voiture.fenetres = {
-//     fGauche : "blue",
-//     fDroite : "pink"
-// }
-
-// voiture.roues = {
-//     rGauche: "blue",
-//     rDroite : "pink"
-// }
-
-
-// let tab = Object.keys(voiture);
-
-// for (i = 0; i < tab.length; i++) {
-//     for (j = 0; j < tab[i].length; i++) {
-//         document.getElementsByClassName(tab[j])[0].style["background-color"] = voiture[tab[j]];
-//     }
-    
-    // switch (tab[i]) {
-    //     case "fenetres":
-    //         let subTab = Object.keys(voiture[tab[i]]);
-    //         for (var j = 0; j < subTab.length; j++) {
-    //             console.log(subTab[j], document.getElementsByClassName(subTab[j])[0].classList[1])
-    //             document.getElementsByClassName(subTab[j])[0].classList[1].style["background-color"] = subTab[j];
-    //         }
-    //         break;
-    //     case "roues":
-    //         for (var j = 0; j < voiture[tab[i]].length; j++) {
-    //             document.getElementsByClassName(tab[i][j])[0].style["background-color"] = voiture[tab[i]];
-    //         }
-    //         document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
-    //         break;
-    //     default:
-    //         console.log(document.getElementsByClassName(tab[i])[0])
-    //         document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
-    //         break;
-    // }
-// }
+//voiture.jantes = {
+//    jGauche: "red",
+//    jDroite: "pink"
+//}
 
 
+//voiture.creatator =
+//{
+//    CreerVoiture()
+//    {
+//        let tab = Object.keys(voiture);
+//        for (i = 0; i < tab.length; i++)
+//        {
+//        let subTab = Object.keys(voiture[tab[i]]);
+//        switch (tab[i]) {
+//            case "fenetres":
+//                for (var j = 0; j < subTab.length; j++) {
+//                    console.log(voiture.fenetres[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+//                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.fenetres[subTab[j]];
+//                }
+//                break;
+//            case "roues":
+//                for (var j = 0; j < subTab.length; j++) {
+//                    console.log(voiture.roues[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+//                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.roues[subTab[j]];
+//                }
+//                break;
+//            case "jantes":
+//                for (var j = 0; j < subTab.length; j++) {
+//                    console.log(voiture.jantes[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+//                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.jantes[subTab[j]];
+//                }
+//            case "creatator":
+//                break;
+//            default:
+//                document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
+//                break;
+//        }
+//    }
+//    }
+//}
+
+Creatator();

@@ -1,19 +1,17 @@
+*{
+    margin : 0px;
+}
 body {
     /*background-color: #306585;*/
-    margin: 20px;
-    background-image: url("../image/background.jpg");
-    background-position-y: 30%;
-    background-size: cover;
-    background-repeat: repeat-x;    
+    overflow:hidden;
 }
 
 #zonePourLaVoiture {
     width: 250px;
     height: 190px;
-    margin: auto;
     position: absolute;
-    top : 60%;
-    left : 40%;
+    top: 75%;
+    left: 40%;
 
 }
 
@@ -87,30 +85,44 @@ body {
 }
 
 .exterieureRoue {
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 70px;
-    height: 70px;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #ba1d1d;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: go 6s infinite;
+    animation: go 3s linear infinite;
+    z-index: -1;
 }
 
-.interieureRoue {
+/*.interieureRoue {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #2815d2;
-}
+}*/
 
 .jantes {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-color: #e6e6e6;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+.movingBackground {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: url("../image/background.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: absolute;
+    animation: moveSlideshow 1600s linear infinite;
 }
 
 @keyframes go {
@@ -122,12 +134,13 @@ body {
     }
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
+@keyframes moveSlideshow {
+    0% {
+        background-position: 50000px;
     }
-    to {
-        transform: translateX(0);
+
+    100% {
+        background-position: 0;
     }
 }
 
