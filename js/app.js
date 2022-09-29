@@ -1,14 +1,68 @@
-let zonePourLaVoiture = document.getElementById('zonePourLaVoiture');
-let corpsDeLaVoiture = document.getElementById('corpsDeLaVoiture');
-let fenetreGauche = document.getElementById('fenetreGauche');
-let fenetreDroite = document.getElementById('fenetreDroite');
-let roueGauche = document.getElementById('roueGauche');
-let exterieureRoue = document.getElementById('exterieureRoue');
-let interieureRoue = document.getElementById('interieureRoue');
-let etoile = document.getElementById('etoile');
-let roueDroite = document.getElementById('roueDroite');
-let exterieureRoue = document.getElementById('exterieureRoue');
-let interieureRoue = document.getElementById('interieureRoue');
-let etoile = document.getElementById('etoile');
+/*_________________*/
+
+////// Customisation possibles
+/* LES NOMS DES ÉLÉMENT DE LA VOITURE À MURPHY
+ * - carosserie
+ * - fenetres
+ * - roues
+ * - jantes
+ 
+ * Couleurs : 
+ * - rouge => "red"
+ * - bleu => "blue"
+ * - rose => "pink" 
+ * */
+
+
+//let voiture = new Object();
+//voiture.carosserie = " a";
+//voiture.fenetres = " a";
+//voiture.roues= "a ";
+//voiture.jantes = " a";
+
+let voiture = {
+    carosserie: "pink",
+    fenetres: "blue",
+    roues: "red",
+    jantes: "purple"
+};
+
+delete voiture.fenetres;
+delete voiture.roues;
+
+voiture.fenetres = {
+    fGauche : "blue",
+    fDroite : "pink"
+}
+
+voiture.roues = {
+    rGauche: "blue",
+    rDroite : "pink"
+}
+
+
+let tab = Object.keys(voiture);
+
+for (i = 0; i < tab.length; i++) {
+    switch (tab[i]) {
+        case "fenetres":
+            let subTab = Object.keys(voiture[tab[i]]);
+            for (var j = 0; j < subTab.length; j++) {
+                console.log(subTab[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                document.getElementsByClassName(subTab[j])[0].classList[1].style["background-color"] = subTab[j];
+            }
+            break;
+        case "roues":
+            for (var j = 0; j < voiture[tab[i]].length; j++) {
+                document.getElementsByClassName(tab[i][j])[0].style["background-color"] = voiture[tab[i]];
+            }
+            document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
+            break;
+        default:
+            console.log(document.getElementsByClassName(tab[i])[0])
+            document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
+            break;
+    }
+}
 
 
