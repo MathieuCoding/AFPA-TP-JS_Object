@@ -5,9 +5,10 @@ body {
     background-position-y: 30%;
     background-size: cover;
     background-repeat: repeat-x;
+    
 }
 
-.zonePourLaVoiture {
+#zonePourLaVoiture {
     width: 250px;
     height: 190px;
     margin: auto;
@@ -17,7 +18,7 @@ body {
 
 }
 
-.corpsDeLaVoiture {
+#corpsDeLaVoiture {
     width: 250px;
     height: 150px;
     background-color: #f6f5f8;
@@ -26,7 +27,7 @@ body {
 
 }
 
-.fenetreGauche {
+#fenetreGauche {
     position: absolute;
     top: 10px;
     left: 20px;
@@ -46,7 +47,7 @@ body {
     0 60%);
 }
 
-.fenetreDroite {
+#fenetreDroite {
     position: absolute;
     top: 10px;
     right: 82px;
@@ -67,7 +68,7 @@ body {
 
 }
 
-.roueGauche {
+#roueGauche {
     position: absolute;
     left: 10px;
     bottom: 0px;
@@ -78,7 +79,7 @@ body {
 
 }
 
-.roueDroite {
+#roueDroite {
     position: absolute;
     right: 20px;
     bottom: 0px;
@@ -88,7 +89,7 @@ body {
     background-color: #1d18c2;
 }
 
-.exterieureRoue {
+#exterieureRoue {
     margin-top: 5px;
     margin-left: 5px;
     width: 70px;
@@ -101,14 +102,14 @@ body {
     animation: go 6s infinite;
 }
 
-.interieureRoue {
+#interieureRoue {
     width: 50px;
-    height: S50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #2815d2;
 }
 
-.etoile {
+#etoile {
     width: 50px;
     height: 50px;
     background-color: #e6e6e6;
@@ -121,5 +122,14 @@ body {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(0);
     }
 }
