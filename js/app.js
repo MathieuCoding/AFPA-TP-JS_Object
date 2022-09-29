@@ -34,16 +34,16 @@ function Creatator() {
 
 ////// Customisation possibles
 
-/* LES NOMS DES ÉLÉMENT DE LA VOITURE À MURPHY
+/* LES NOMS DES ï¿½Lï¿½MENT DE LA VOITURE ï¿½ MURPHY
  * - carosserie
  * - fenetres
  * - roues
  * - jantes
- 
- * Couleurs : 
+
+ * Couleurs :
  * - rouge => "red"
  * - bleu => "blue"
- * - rose => "pink" 
+ * - rose => "pink"
  * - blanc => "whiteColor"
  * */
 
