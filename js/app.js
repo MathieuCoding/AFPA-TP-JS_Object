@@ -1,4 +1,4 @@
-/*lisez pas cette fonction :o*/
+
 
 function Creatator() {
     let tab = Object.keys(voiture);
@@ -32,51 +32,58 @@ function Creatator() {
     }
 }
 
-////// Customisation possibles
 
-/* LES NOMS DES �L�MENT DE LA VOITURE � MURPHY
- * - carosserie
- * - fenetres
- * - roues
- * - jantes
+//Créez un objet, avec les propriétés ayant pour clé "carosserie", "année" et "contrôle technique", les valeurs peuvent être des chaînes de caractères, des nombres ou des booléens.
 
- * Couleurs :
- * - rouge => "red"
- * - bleu => "blue"
- * - rose => "pink"
- * - blanc => "whiteColor"
- * */
+let voiture = new Object();
+voiture.carosserie = "green";
+voiture["année"] = 2000;
+voiture["contrôle technique"] = true;
 
-let voiture = {
-    carosserie: "white",
-    fenetres: "blue",
-    roues: "red",
-    jantes: "red",
-};
+// Modifiez la valeur de la propriété "carosserie"
 
-//delete voiture.fenetres;
-//delete voiture.roues;
-//delete voiture.jantes;
+voiture.carosserie = "red";
 
-//voiture.groupeFenetres = {
-//    fGauche : "red",
-//    fDroite : "blue"
-//}
+// Supprimez les propriétés "année" et "contrôle technique" de l'objet "voiture"
 
-//voiture.groupeRoues = {
-//    rGauche: "red",
-//    rDroite : "purple"
-//}
+delete voiture.année;
+delete voiture["contrôle technique"];
 
-//voiture.jantes = {
-//    jGauche: "red",
-//    jDroite: "pink"
-//}
+/* Ajoutez à l'objet "voiture" les objets suivants, et donnez leurs comme valeur une couleur :
+"groupeFenetres": fGauche, fDroite; 
+"groupeRoues": rGauche, rDroite; 
+"jantes": jGauche, jDroite */
+
+voiture.groupeFenetres = {
+    fGauche: "black",
+}
+
+voiture.groupeFenetres.fDroite = "pink";
+
+voiture.groupeRoues = {
+   rGauche: "red",
+   rDroite : "purple"
+}
+
+voiture.jantes = {
+   jGauche: "red",
+   jDroite: "pink"
+}
+
+// Enumérez dans la console de votre navigateur la liste des clés des prioriétés de votre voiture
+
+console.log(Object.keys(voiture));
 
 
-//voiture.creatator =
-//{
-//    CreerVoiture()
+
+
+
+Creatator();
+
+
+// voiture.creatator =
+// {
+//    Creatator()
 //    {
 //        let tab = Object.keys(voiture);
 //        for (i = 0; i < tab.length; i++)
@@ -108,6 +115,4 @@ let voiture = {
 //        }
 //    }
 //    }
-//}
-
-Creatator();
+// }
