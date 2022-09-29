@@ -1,8 +1,10 @@
 body {
     /*background-color: #306585;*/
     margin: 20px;
-    background-image: url("/background.jpg");
+    background-image: url("../image/background.jpg");
+    background-position-y: 30%;
     background-size: cover;
+    background-repeat: repeat-x;
 }
 
 .zonePourLaVoiture {
