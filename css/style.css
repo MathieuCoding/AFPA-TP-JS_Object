@@ -18,16 +18,16 @@ body {
 
 }
 
-#corpsDeLaVoiture {
+.carosserie {
     width: 250px;
     height: 150px;
-    background-color: #f6f5f8;
+    background-color: grey;
     clip-path: polygon( 23% 0, 53% 1%, 71% 41%, 100% 52%, 100% 100%, 0 100%, 0 28%);
     border : 1px solid gray;
 
 }
 
-#fenetreGauche {
+.fGauche {
     position: absolute;
     top: 10px;
     left: 20px;
@@ -47,7 +47,7 @@ body {
     0 60%);
 }
 
-#fenetreDroite {
+.fDroite {
     position: absolute;
     top: 10px;
     right: 82px;
@@ -64,11 +64,9 @@ body {
     45% 0,
     100% 100%,
     0 100%);
-
-
 }
 
-#roueGauche {
+.rGauche {
     position: absolute;
     left: 10px;
     bottom: 0px;
@@ -76,10 +74,9 @@ body {
     height: 80px;
     border-radius: 50%;
     background-color: #1b1b1b;
-
 }
 
-#roueDroite {
+.rDroite {
     position: absolute;
     right: 20px;
     bottom: 0px;
@@ -89,7 +86,7 @@ body {
     background-color: #1d18c2;
 }
 
-#exterieureRoue {
+.exterieureRoue {
     margin-top: 5px;
     margin-left: 5px;
     width: 70px;
@@ -102,14 +99,14 @@ body {
     animation: go 6s infinite;
 }
 
-#interieureRoue {
+.interieureRoue {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #2815d2;
 }
 
-#etoile {
+.jantes {
     width: 50px;
     height: 50px;
     background-color: #e6e6e6;
@@ -132,4 +129,20 @@ body {
     to {
         transform: translateX(0);
     }
+}
+
+.whiteColor{
+    background-color: white;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color:blue;
+}
+
+.red{
+    background-color:red;
 }
