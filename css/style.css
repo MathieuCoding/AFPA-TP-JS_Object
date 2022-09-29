@@ -1,20 +1,27 @@
 body {
-    background-color: #1b1b1b;
+    /*background-color: #306585;*/
     margin: 20px;
+    background-image: url("/back.jpg");
+    background-size: cover;
 }
 
 .zonePourLaVoiture {
     width: 250px;
     height: 190px;
     margin: auto;
-    position: relative;
+    position: absolute;
+    top : 60%;
+    left : 40%;
+
 }
 
 .corpsDeLaVoiture {
     width: 250px;
     height: 150px;
-    background-color: #663399;
+    background-color: #f6f5f8;
     clip-path: polygon( 23% 0, 53% 1%, 71% 41%, 100% 52%, 100% 100%, 0 100%, 0 28%);
+    border : 1px solid gray;
+
 }
 
 .fenetreGauche {
@@ -23,7 +30,7 @@ body {
     left: 20px;
     width: 70px;
     height: 50px;
-    background-color: #1b1b1b;
+    background-color: #93bfea;
     clip-path: polygon(
         
     55% 0, 
@@ -39,7 +46,7 @@ body {
     right: 82px;
     width: 70px;
     height: 50px;
-    background-color: #1b1b1b;
+    background-color: #93bfea;
     clip-path: polygon(
         
     0% 0, 
@@ -57,7 +64,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #1b1b1b;
+    background-color: #1d18c2;
 }
 
 .roueDroite {
@@ -67,7 +74,7 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #1b1b1b;
+    background-color: #1d18c2;
 }
 
 .exterieureRoue {
@@ -76,7 +83,7 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: #e6e6e6;
+    background-color: #ba1d1d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,9 +92,9 @@ body {
 
 .interieureRoue {
     width: 50px;
-    height: 50px;
+    height: S50px;
     border-radius: 50%;
-    background-color: #1b1b1b;
+    background-color: #2815d2;
 }
 
 .etoile {
@@ -102,6 +109,6 @@ body {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
 }
