@@ -8,14 +8,14 @@ function Creatator() {
         switch (tab[i]) {
             case "groupeFenetres":
                 for (var j = 0; j < subTab.length; j++) {
-                    console.log(voiture.fenetres[j], document.getElementsByClassName(subTab[j])[0].classList[1])
-                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.fenetres[subTab[j]];
+                    console.log(voiture.groupeFenetres[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeFenetres[subTab[j]];
                 }
                 break;
             case "groupeRoues":
                 for (var j = 0; j < subTab.length; j++) {
-                    console.log(voiture.roues[j], document.getElementsByClassName(subTab[j])[0].classList[1])
-                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.roues[subTab[j]];
+                    console.log(voiture.groupeRoues[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeRoues[subTab[j]];
                 }
                 break;
             case "jantes":
@@ -47,18 +47,11 @@ function Creatator() {
  * - blanc => "whiteColor"
  * */
 
-
-//let voiture = new Object();
-//voiture.carosserie = " a";
-//voiture.fenetres = " a";
-//voiture.roues= "a ";
-//voiture.jantes = " a";
-
 let voiture = {
-    carosserie: "pink",
+    carosserie: "white",
     fenetres: "blue",
     roues: "red",
-    jantes: "red"
+    jantes: "red",
 };
 
 //delete voiture.fenetres;
@@ -66,18 +59,18 @@ let voiture = {
 //delete voiture.jantes;
 
 //voiture.groupeFenetres = {
-//    fGauche : "blue",
-//    fDroite : "pink"
+//    fGauche : "red",
+//    fDroite : "blue"
 //}
 
 //voiture.groupeRoues = {
-//    rGauche: "pink",
-//    rDroite : "blue"
+//    rGauche: "red",
+//    rDroite : "purple"
 //}
 
 //voiture.jantes = {
-//    jGauche: "pink",
-//    jDroite: "blue"
+//    jGauche: "red",
+//    jDroite: "pink"
 //}
 
 
