@@ -1,4 +1,4 @@
-/*lisez pas cette fonction :o*/
+
 
 function Creatator() {
     // la variable tab contient toute les clés de notre objet voiture
@@ -34,7 +34,6 @@ function Creatator() {
     }
 }
 
-////// Customisation possibles
 
 /* LES NOMS DES �L�MENT DE LA VOITURE � MURPHY
  * - carosserie
@@ -55,24 +54,36 @@ voiture.fenetres = "pink";
 voiture.roues = "red";
 voiture.jantes = "blue";
 
-//delete voiture.fenetres;
-//delete voiture.roues;
-//delete voiture.jantes;
+// voiture.carosserie = "red";
 
-//voiture.groupeFenetres = {
-//    fGauche : "red",
-//    fDroite : "blue"
-//}
+// Supprimez les propriétés "année" et "contrôle technique" de l'objet "voiture"
 
-//voiture.groupeRoues = {
-//    rGauche: "red",
-//    rDroite : "purple"
-//}
+// delete voiture.année;
+// delete voiture["contrôle technique"];
 
-//voiture.groupeJantes = {
-//    jGauche: "red",
-//    jDroite: "pink"
-//}
+/* Ajoutez à l'objet "voiture" les objets suivants, et donnez leurs comme valeur une couleur :
+groupeFenetres: fGauche, fDroite;
+groupeRoues: rGauche, rDroite;
+jantes: jGauche, jDroite */
+
+// voiture.groupeFenetres = {
+//     fGauche: "black",
+// }
+// voiture.groupeFenetres.fDroite = "pink";
+
+// voiture.groupeRoues = {
+//     rGauche: "red",
+//     rDroite: "purple"
+// }
+
+// voiture.jantes = {
+//     jGauche: "red",
+//     jDroite: "pink"
+// }
+
+// Enumérez dans la console de votre navigateur la liste des clés des prioriétés de votre voiture
+
+// console.log(Object.keys(voiture));
 
 ////// Creatator() applique les modification de votre objet voiture
 Creatator();
