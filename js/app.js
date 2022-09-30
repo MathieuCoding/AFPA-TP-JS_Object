@@ -35,57 +35,19 @@ function Creatator() {
 }
 
 
-/* LES NOMS DES �L�MENT DE LA VOITURE � MURPHY
- * - carosserie
- * - fenetres
- * - roues
- * - jantes
- * */
-
-///// créer votre objet
-let voiture =
-{
-    carosserie: ""
-}
+//------------ MODIFIEZ LE CODE DANS CETTE ZONE LA ------------//
 
 
-////// Créez des propriétés supplémentaire pour votre objet
-voiture.fenetres = "pink";
-voiture.roues = "red";
-voiture.jantes = "blue";
 
-// voiture.carosserie = "red";
 
-// Supprimez les propriétés "année" et "contrôle technique" de l'objet "voiture"
 
-// delete voiture.année;
-// delete voiture["contrôle technique"];
 
-/* Ajoutez à l'objet "voiture" les objets suivants, et donnez leurs comme valeur une couleur :
-groupeFenetres: fGauche, fDroite;
-groupeRoues: rGauche, rDroite;
-jantes: jGauche, jDroite */
 
-// voiture.groupeFenetres = {
-//     fGauche: "black",
-// }
-// voiture.groupeFenetres.fDroite = "pink";
 
-// voiture.groupeRoues = {
-//     rGauche: "red",
-//     rDroite: "purple"
-// }
 
-// voiture.jantes = {
-//     jGauche: "red",
-//     jDroite: "pink"
-// }
 
-// Enumérez dans la console de votre navigateur la liste des clés des prioriétés de votre voiture
+//------------ MODIFIEZ LE CODE DANS LA ZONE CI-DESSUS ------------//
 
-// console.log(Object.keys(voiture));
-
-////// Creatator() applique les modification de votre objet voiture
 Creatator();
 
 /////// Créez votre fonction dans une propriété
