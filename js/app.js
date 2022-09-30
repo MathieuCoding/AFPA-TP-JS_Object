@@ -10,29 +10,35 @@ function Creatator() {
         switch (tab[i]) {
             case "groupeFenetres":
                 for (var j = 0; j < subTab.length; j++) {
-                    console.log(voiture.groupeFenetres[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    //console.log(voiture.groupeFenetres[j], document.getElementsByClassName(subTab[j])[0].classList[1])
                     document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeFenetres[subTab[j]];
                 }
                 break;
             case "groupeRoues":
                 for (var j = 0; j < subTab.length; j++) {
-                    console.log(voiture.groupeRoues[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    //console.log(voiture.groupeRoues[j], document.getElementsByClassName(subTab[j])[0].classList[1])
                     document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeRoues[subTab[j]];
                 }
                 break;
             case "groupeJantes":
                 for (var j = 0; j < subTab.length; j++) {
-                    console.log(voiture.jantes[j], document.getElementsByClassName(subTab[j])[0].classList[1])
-                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.jantes[subTab[j]];
+                    //console.log(voiture.groupeJantes[j], document.getElementsByClassName(subTab[j])[0].classList[1])
+                    document.getElementsByClassName(subTab[j])[0].style["background-color"] = voiture.groupeJantes[subTab[j]];
                 }
             case "creatator":
                 break;
             default :
+            //console.log(document.getElementsByClassName(tab[i]));
                 document.getElementsByClassName(tab[i])[0].style["background-color"] = voiture[tab[i]];
                 break;
         }
     }
 }
+
+
+
+
+
 
 
 //------------ MODIFIEZ LE CODE DANS CETTE ZONE LA ------------//
@@ -43,10 +49,12 @@ function Creatator() {
 
 
 
-
-
-
 //------------ MODIFIEZ LE CODE DANS LA ZONE CI-DESSUS ------------//
+
+
+
+
+
 
 Creatator();
 
